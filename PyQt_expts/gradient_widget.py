@@ -10,7 +10,7 @@ class App(QWidget):
 
     def __init__(self):
         super(App, self).__init__()
-        self.setStyleSheet(open('stylesheet.css').read())
+        self.setStyleSheet(open('PyQt_expts/stylesheet.css').read())
         train_button = QPushButton("Train", self)
         test_button = QPushButton("Test", self)
         show_button = QPushButton("Show", self)
