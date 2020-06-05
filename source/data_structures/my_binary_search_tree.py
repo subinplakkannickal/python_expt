@@ -34,13 +34,14 @@ class BinarySearchTreeNode(object):
         
         return False
         
-    def in_order_traversal(self):
-        if self.left:
-            self.left.in_order_traversal()
-        print (self.value)
-        
-        if self.right:
-            self.right.in_order_traversal()        
+def in_order_traversal(root):
+    if root.left:
+        in_order_traversal(root.left)
+
+    print (root.value)
+    
+    if root.right:
+        in_order_traversal(root.right)        
 
     
 def add_node(tree, value):
@@ -59,7 +60,7 @@ def create_tree(elements_list):
     
 
 if __name__ == "__main__":
-    """ [8, 10, 3, 12, 1, 6, 5, 7, 11, 13, 2, 4, 9, 14, 15]
+    """ [8, 10, 3, 12, 1, 6, 5, 7, 11, 13, 2, 4, 9, 14, 15] 
 
                     8
                   /   \
@@ -73,12 +74,12 @@ if __name__ == "__main__":
                4                14
                                   \
                                    15
-
+                 
     """
     elements_list = [8, 10, 3, 12, 1, 6, 5, 7, 11, 13, 2, 4, 9, 14, 15]
     tree = create_tree(elements_list)
-    tree.in_order_traversal()
-    print("100:", tree.search(100))
+    in_order_traversal(tree)
+    print(tree.search(100))
     add_node(tree, 100)
-    print("100:", tree.search(100))
-    print("0:", tree.search(0))
+    print(tree.search(100))
+    print(tree.search(0))

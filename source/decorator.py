@@ -1,7 +1,6 @@
-def dec_function(func):
+def dec_function(func, *args, **kwargs):
     def _func(*args, **kwargs):
-        k =  func(*args, **kwargs)
-        return k * 10
+        return func(*args, **kwargs) ** 2
 
     return _func
 
@@ -11,5 +10,5 @@ def func(k):
 
 
 if __name__ == "__main__":
-    val = func(k=10)
+    val = func(k=2)
     print(val)
