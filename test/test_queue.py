@@ -27,7 +27,7 @@ class TestQueue(unittest.TestCase):
         queue = my_queue.Queue()
         i = randint(0, 20)
         queue.enqueue(i)
-        self.assertEqual(queue.dequeue(), i+ 1)
+        self.assertEqual(queue.dequeue(), i)
 
 
 if __name__ == '__main__':
