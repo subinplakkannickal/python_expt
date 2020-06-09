@@ -26,7 +26,6 @@ class FirstN(object):
 
 
 if __name__ == "__main__":
-    import pdb; pdb.set_trace()
     sum_of_first_n = sum(firstn(1000000))
     sum_of_first_n_cls = sum(FirstN(1000000))
     print("Output of generator.py")
