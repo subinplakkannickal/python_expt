@@ -13,7 +13,7 @@ class TestStack(unittest.TestCase):
 
     def test_top(self):
         stack = my_stack.Stack()
-        i = randint(0, 20)
+        i = randint(0, 30)
         stack.push(i)
         self.assertEqual(stack.top, i)
 
