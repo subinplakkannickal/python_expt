@@ -4,5 +4,5 @@ MAINTAINER subin.plakkannickal@gmail.com
 COPY . /python_expt
 WORKDIR /python_expt
 RUN pip install --no-cache-dir -r requirements.txt
-RUN ["pytest", "-v" "--junitxml=reports/result.xml"]
+RUN ["pytest", "-v"]
 CMD tail -f /dev/null
