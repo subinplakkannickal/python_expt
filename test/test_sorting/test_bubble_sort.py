@@ -9,7 +9,7 @@ class TestBubbleSort(unittest.TestCase):
         self.assertEqual(bubble_sort(input), expected_output)
 
     def test_case_2(self):
-        self.assertEqual(bubble_sort([1, 2, 3]]), [1, 2, 3])
+        self.assertEqual(bubble_sort([1, 2, 3]), [1, 2, 3])
 
 
 class TestRecursiveBubbleSort(unittest.TestCase):
