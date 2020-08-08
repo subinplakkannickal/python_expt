@@ -8,6 +8,9 @@ class TestGenerator(unittest.TestCase):
 
     def test_FirstN(self):
         self.assertEqual(sum(generator.FirstN(10)), 45)
+    
+    def test_FirstN(self):
+        self.assertNotEqual(sum(generator.FirstN(10)), 0)
 
 
 if __name__ == '__main__':
