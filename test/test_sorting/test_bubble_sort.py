@@ -20,7 +20,7 @@ class TestRecursiveBubbleSort(unittest.TestCase):
         self.assertEqual(recursive_bubble_sort(input), expected_output)
 
     def test_case_2(self):
-        self.assertEqual(recursive_bubble_sort([1, 2, 3]]), [1, 2, 3])
+        self.assertEqual(recursive_bubble_sort([1, 2, 3]), [1, 2, 3])
 
 
 if __name__ == '__main__':
