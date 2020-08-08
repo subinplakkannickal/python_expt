@@ -14,7 +14,7 @@ class TestLinearSearch(unittest.TestCase):
     def test_case_2(self):
         input_list = [1, 2, 3, 4, 5, 6, 7]
 
-        self.assertEqual(linear_searching(input_list, 10), 1 )
+        self.assertEqual(linear_searching(input_list, 10), None )
 
 
 
