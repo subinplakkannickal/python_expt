@@ -10,7 +10,7 @@ class TestDecorator(unittest.TestCase):
         self.assertNotEqual(decorator.func(4), 25)
 
     def test_func_3(self):
-        self.assertNotEqual(decorator.func(4), 16)
+        self.assertNotEqual(decorator.func(4), 0)
 
 
 if __name__ == '__main__':
