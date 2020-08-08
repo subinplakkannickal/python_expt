@@ -14,10 +14,10 @@ class TestJumbSearch(unittest.TestCase):
         self.assertEqual(jump_searching(input_list, element, step), input_list.index(element) )
 
     def test_case_2(self):
-        input_list = [1, 2, 3, 4, 5, 6, 7]
+        input_list = [0, 1, 2, 3, 4, 5, 6, 7]
         element, step = choice(input_list), randint(1,5)
 
-        self.assertEqual(linear_searching(input_list, 10), None )
+        self.assertEqual(jump_searching(input_list, element, step), element )
 
 
 
