@@ -7,6 +7,9 @@ class TestDecorator(unittest.TestCase):
         self.assertEqual(decorator.func(4), 16)
 
     def test_func_2(self):
+        self.assertNotEqual(decorator.func(4), 25)
+
+    def test_func_3(self):
         self.assertNotEqual(decorator.func(4), 16)
 
 
