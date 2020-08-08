@@ -6,5 +6,3 @@ WORKDIR /python_expt
 
 RUN pip install --no-cache-dir -r requirements.txt
 RUN pytest -v --junitxml="reports/result.xml"
-
-CMD ls -la reports
