@@ -1,7 +1,7 @@
 import unittest
 from source.algorithm.sorting.selection import selection_sorting
 
-class TestBubbleSort(unittest.TestCase):
+class TestSelectionSort(unittest.TestCase):
 
     def test_case_1(self):
         input = [64, 82, 100, 34, 25, 12, 22, 11, 90]
