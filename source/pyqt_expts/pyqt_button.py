@@ -12,9 +12,9 @@ class App(QWidget):
         train_button = QPushButton("Train", self)
         test_button = QPushButton("Test", self)
         show_button = QPushButton("Show", self)
-        train_button.move(100,70)
-        test_button.move(250,70)
-        show_button.move(400,70)
+        train_button.move(100, 70)
+        test_button.move(250, 70)
+        show_button.move(400, 70)
 
         test_button.clicked.connect(self.set_test_value)
         train_button.clicked.connect(self.set_train_value)
@@ -23,7 +23,7 @@ class App(QWidget):
         self.show()
 
     def show_value(self, a, b):
-        print(a,b)
+        print(a, b)
 
     def set_train_value(self):
         self.train_value = 100

@@ -1,8 +1,10 @@
-# Factory pattern
+""" Factory pattern
+"""
 from abc import ABCMeta, abstractmethod
 
-# Abstract concrete class
 class Item(metaclass=ABCMeta):
+    """ Abstract concrete class
+    """
     @abstractmethod
     def name(self):
         pass
@@ -107,5 +109,3 @@ if __name__ == "__main__":
     print (reference)
     video2 = ItemFactory.get_item('Video', 'vid_2', 100, 0, 200)
     print (video2)
-
-

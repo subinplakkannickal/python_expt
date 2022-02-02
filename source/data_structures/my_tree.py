@@ -1,5 +1,8 @@
-class TreeNode(object):
-
+"""Tree implementation
+"""
+class TreeNode():
+    """ Tree implementation
+    """
     def __init__(self, name):
         self.name = name
         self.children = []
@@ -69,4 +72,3 @@ def create_tree():
 if __name__ == "__main__":
     tree = create_tree()
     tree.plot_tree()
-

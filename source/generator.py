@@ -2,15 +2,19 @@
 Generator: The function which can be behave as a iterator.
 """
 
-def firstn(n):
+def firstn(limit):
+    """ Functional way of implementation of generator.
+    """
     num = 0
-    while num < n:
+    while num < limit:
         yield num
         num += 1
 
-class FirstN(object):
-    def __init__(self, n):
-        self.n = n
+class FirstN():
+    """ Class generator implementation.
+    """
+    def __init__(self, limit):
+        self.limit = limit
         self.num = 0
 
     def __iter__(self):
@@ -18,8 +22,8 @@ class FirstN(object):
 
     # Python 3 compatibility
     def __next__(self):
-        if self.num < self.n:
-            cur, self.num = self.num, self.num+1
+        if self.num < self.limit:
+            cur, self.num = self.num, self.num + 1
             return cur
         else:
             raise StopIteration()

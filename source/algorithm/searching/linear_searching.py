@@ -1,6 +1,10 @@
+"""Linear search.
+"""
 from random import randint, choice
 
 def linear_searching(_list, element):
+    """ Linear search
+    """
     for i in range(len(_list)):
         if _list[i] == element:
             return i
@@ -9,7 +13,7 @@ def linear_searching(_list, element):
 
 
 if __name__ == "__main__":
-    input_list = [randint(0,50) for i in range(20)]
+    input_list = [randint(0, 50) for i in range(20)]
 
     print(input_list)
     element = choice(input_list)

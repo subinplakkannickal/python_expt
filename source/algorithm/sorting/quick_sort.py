@@ -14,6 +14,6 @@ def quick_sort(input_list):
     return quick_sort(lesser) + equal + quick_sort(greater)
     
 if __name__ == "__main__":
-    input_list = [6,8,3,9,0,4,2,7,1,5]
+    input_list = [6, 8, 3, 9, 0, 4, 2, 7, 1, 5]
     sorted_list = quick_sort(input_list)
-    print (sorted_list)
+    print(sorted_list)

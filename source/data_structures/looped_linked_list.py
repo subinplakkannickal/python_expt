@@ -3,13 +3,17 @@ Considering that id of a node will be always less than id of next node.
 The loop checking is in base of id, which id of a node id greater than next node means that thee current node is linked to a previous node
 """
 
-class Node(object):
+class Node():
+    """ Node class
+    """
     def __init__(self, value):
         self.value = value
         self.next = None
         self.id = None
 
-class LinkedList(object):
+class LinkedList():
+    """ Implementation of looped linked list
+    """
     def __init__(self):
         self.head = None
         self._node = None

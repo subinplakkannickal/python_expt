@@ -1,4 +1,8 @@
+""" Insertion sorting.
+"""
 def insertion_sort(new_element, array=None):
+    """ Insertion sorting.
+    """
     if not array:
         return [new_element]
 
@@ -16,7 +20,7 @@ if __name__ == "__main__":
     for i in input:
         sorted_array = insertion_sort(i, sorted_array)
 
-    print (sorted_array)
+    print(sorted_array)
 
     sorted_input = sorted(input)
-    print (sorted_input)
+    print(sorted_input)

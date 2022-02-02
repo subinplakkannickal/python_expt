@@ -1,15 +1,15 @@
 def selection_sorting(array):
+    """ Selection sorting.
+    """
     len_of_array = len(array)
 
     for i in range(len_of_array):
-        k = i
-        k_ = array[i]
+        min_pos = i
         for j in range(i+1, len_of_array):
-            if k_ > array[j]:
-                k = j
-                k_ = array[j]
+            if array[min_pos] > array[j]:
+                min_pos = j
 
-        array[i], array[k] = array[k], array[i]
+        array[i], array[min_pos] = array[min_pos], array[i]
 
     return array
 
@@ -20,6 +20,7 @@ if __name__ == "__main__":
     """
     input = ["paper", "true", "soap", "floppy", "flower"]
     sorted_list = selection_sorting(input)
-    print (sorted_list)
+    print(sorted_list)
     sorted_input = sorted(input)
-    print (sorted_input)
+    print(sorted_input)
+

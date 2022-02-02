@@ -1,5 +1,8 @@
-
-class Queue(object):
+"""Queue
+"""
+class Queue():
+    """ Queue implementation
+    """
     def __init__(self):
         self._items = []
 
@@ -24,5 +27,4 @@ class Queue(object):
     @property
     def size(self):
         return len(self._items)
-
-    
+   

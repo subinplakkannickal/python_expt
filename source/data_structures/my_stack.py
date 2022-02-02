@@ -1,6 +1,9 @@
+""" Stack
+"""
 
-
-class Stack(object):
+class Stack():
+    """ Sack implementation
+    """
     def __init__(self):
         self._items = []
 

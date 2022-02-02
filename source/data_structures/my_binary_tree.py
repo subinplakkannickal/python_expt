@@ -1,3 +1,5 @@
+""" binary tree.
+"""
 import queue
 
 class BinaryTreeNode(object):
@@ -9,7 +11,7 @@ class BinaryTreeNode(object):
 def pre_order_traversal(root):
     """ Visit nodes in pre order method.
     """
-    print (root.value)
+    print(root.value)
 
     if root.left:
         pre_order_traversal(root.left)
@@ -23,7 +25,7 @@ def in_order_traversal(root):
     if root.left:
         in_order_traversal(root.left)
 
-    print (root.value)
+    print(root.value)
     
     if root.right:
         in_order_traversal(root.right)
@@ -37,7 +39,7 @@ def post_order_traversal(root):
     if root.right:
         post_order_traversal(root.right)
     
-    print (root.value)
+    print(root.value)
 
 def level_order_traversal(root):
     """ Visit nodes in level order method.
@@ -98,9 +100,9 @@ def create_tree():
 if __name__ == "__main__":
     tree = create_tree()
     print_traversal('in_order', tree)
-    print ("==========")
+    print("==========")
     print_traversal('pre_order', tree)
-    print ("==========")
+    print("==========")
     print_traversal('post_order', tree)
-    print ("==========")
+    print("==========")
     print_traversal('level_order', tree)

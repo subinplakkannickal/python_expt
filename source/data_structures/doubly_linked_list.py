@@ -1,9 +1,15 @@
-class Node(object):
+""" Double linked list
+"""
+class Node():
+    """ Node class
+    """
     def __init__(self, value):
         self.value = value
         self.next = None
 
-class DoublyLinkedList(object):
+class DoublyLinkedList():
+    """ Implementation of double linked list.
+    """
     def __init__(self):
         self.head = None
         self.node = None
@@ -52,12 +58,10 @@ if __name__ == "__main__":
     """
 
     linkedlist = DoublyLinkedList()
-    elements = (0,1,2,3,4,5,6,7,8,9)
+    elements = (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
     for i in elements:
         linkedlist.add(i)
 
     linkedlist_values = linkedlist.get(20)
     for i in linkedlist_values:
         print (i)
-
-    

@@ -1,4 +1,6 @@
-class BinarySearchTreeNode(object):
+class BinarySearchTreeNode():
+    """ mplementation of binary search node
+    """
     def __init__(self, value):
         self.value = value
         self.left = None

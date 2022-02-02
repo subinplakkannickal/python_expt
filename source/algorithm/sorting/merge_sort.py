@@ -32,6 +32,7 @@ def merge_sort(input_list):
 
 
 if __name__ == "__main__":
-    input_list = [6,8,3,9,0,4,2,7,1,5]
+    input_list = [6, 8, 3, 9, 0, 4, 2, 7, 1, 5]
     sorted_list = merge_sort(input_list)
-    print (sorted_list)
+    print(sorted_list)
+

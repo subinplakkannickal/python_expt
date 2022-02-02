@@ -1,14 +1,21 @@
-def dec_function(func, *args, **kwargs):
-    def _func(*args, **kwargs):
-        return func(*args, **kwargs) ** 2
+""" This module supposed to undestand how decorator is working.
+"""
 
-    return _func
+def dec_function(input_function, *args, **kwargs):
+    """The decorator function.
+    """
+    def wrapper_function(*args, **kwargs):
+        return input_function(*args, **kwargs) ** 2
+
+    return wrapper_function
 
 @dec_function
-def func(k):
+def function_to_be_decorated(k):
+    """ Dummy function.
+    """
     return k
 
 
 if __name__ == "__main__":
-    val = func(k=2)
-    print(val)
+    value = function_to_be_decorated(k=2)
+    print(value)

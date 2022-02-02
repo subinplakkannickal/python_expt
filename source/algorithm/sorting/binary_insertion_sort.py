@@ -1,13 +1,17 @@
+""" Binary insert sorting
+"""
 def binary_insertion_sort(new_element, array=None):
+    """ Binary insetion sorting
+    """
     if not array:
         return [new_element]
-    
+
     mid = len(array)//2
-        
+
     if array[mid] == new_element:
         array.insert(mid+1, new_element)
         return array
-        
+
     elif array[mid] > new_element:
         if mid == 0:
             array.insert(0, new_element)
@@ -30,7 +34,7 @@ if __name__ == "__main__":
     for i in input:
         sorted_array = binary_insertion_sort(i, sorted_array)
 
-    print (sorted_array)
+    print(sorted_array)
 
     sorted_input = sorted(input)
-    print (sorted_input)
+    print(sorted_input)

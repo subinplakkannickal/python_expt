@@ -1,6 +1,11 @@
 # python
 python experiments
 
+Run pytest:
+===========
+    cd python_expt/
+    pytest -v
+
 CI/CD implementation with jenkins
 =================================
 References:

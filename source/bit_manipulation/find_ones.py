@@ -1,7 +1,10 @@
+""" bit manipulation.
+"""
 from random import randint
 
-
 def find_ones(value):
+    """
+    """
     ones_count = 0
     while value:
         ones_count += value & 1
@@ -12,4 +15,4 @@ def find_ones(value):
 if __name__ == "__main__":
     value = randint(0,50)
     once_count = find_ones(value)    
-    print ("Count of ones in {}({}): {}".format(value, bin(value), once_count))
+    print("Count of ones in {}({}): {}".format(value, bin(value), once_count))
