@@ -3,8 +3,19 @@ python experiments
 
 Run pytest:
 ===========
-    cd python_expt/
-    pytest -v
+	cd python_expt/
+	pytest -v
+
+Check coverage:
+===============
+	coverage run <file_name>
+	coverage report -m
+	# Togenerate html report
+	coverage html 
+
+Check coverage of testing:
+==========================
+	pytest --cov=source --cov-report=html
 
 CI/CD implementation with jenkins
 =================================

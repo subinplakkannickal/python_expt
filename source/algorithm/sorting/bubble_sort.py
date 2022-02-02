@@ -38,7 +38,8 @@ if __name__ == "__main__":
     sorted_list_1 = bubble_sort(input_1)
     print(sorted_list_1)
 
-    sorted_list_2 = recursive_bubble_sort(input_1)
+    input_2 = [64, 82, 100, 34, 25, 12, 22, 11, 90]
+    sorted_list_2 = recursive_bubble_sort(input_2)
     print(sorted_list_2)
 
     sorted_input = sorted(input_1)
